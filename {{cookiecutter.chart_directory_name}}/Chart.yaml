@@ -1,0 +1,4 @@
+apiVersion: v1
+description: {{cookiecutter.chart_name}}
+name: {{cookiecutter.chart_slug}}
+version: {{cookiecutter.version}}

@@ -1,0 +1,9 @@
+{
+    "chart_name": "My Awesome Chart",
+    "chart_slug": "{{ cookiecutter.chart_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "chart_directory_name": "chart",
+    "version": "0.1.0",
+    "image_url": "gitlab.example.com/group/project",
+    "project_url": "https://example.com",
+    "DATABASE_URL": "postges:///{{ cookiecutter.chart_slug}}"
+}  

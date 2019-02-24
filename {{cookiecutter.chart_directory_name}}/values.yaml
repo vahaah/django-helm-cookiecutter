@@ -1,0 +1,22 @@
+# Default values for chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+image:
+  repository: {{cookiecutter.image_url}}
+  tag: stable
+  pullPolicy: Always
+  secrets:
+    - name: gitlab-registry
+application:
+  track: stable
+  tier: web
+service:
+  enabled: true
+  name: web
+  type: ClusterIP
+  url: {{cookiecutter.project_url}}
+  externalPort: 5000
+  internalPort: 5000
+settings:
+  DATABASE_URL: {{cookiecutter.DATABASE_URL}}
