@@ -9,11 +9,13 @@ Quickstart
 
 Install cookiecutter:
 
+.. code-block:: bash
+
     $ pip install "cookiecutter>=1.4.0"
 
 Now run it against this repo:
 
-.. code-block:: python
+.. code-block:: bash
 
     $ cookiecutter https://github.com/pydanny/django-helm-cookiecutter
 
