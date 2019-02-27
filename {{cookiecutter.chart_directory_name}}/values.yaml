@@ -35,4 +35,4 @@ postgresql:
   postgresDatabase: {{cookiecutter.postgres_database}}
 
 settings:
-  DATABASE_URL: {{cookiecutter.DATABASE_URL}}
+  DATABASE_URL: postgres://{{cookiecutter.postgres_user}}:{{cookiecutter.postgres_password}}@localhost:5432/{{cookiecutter.postgres_database}}
