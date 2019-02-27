@@ -5,5 +5,8 @@
     "version": "0.1.0",
     "image_url": "gitlab.example.com/group/project",
     "project_url": "https://example.com",
-    "DATABASE_URL": "postges:///{{ cookiecutter.chart_slug}}"
+    "postgresql_enabled": "true",
+    "postgres_user": "postgres",
+    "postgres_password": "password",
+    "postgres_database": "postgres"
 }  

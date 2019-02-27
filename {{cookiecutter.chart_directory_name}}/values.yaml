@@ -18,5 +18,21 @@ service:
   url: {{cookiecutter.project_url}}
   externalPort: 5000
   internalPort: 5000
+
+livenessProbe:
+  path: "/"
+  initialDelaySeconds: 15
+  timeoutSeconds: 15
+readinessProbe:
+  path: "/"
+  initialDelaySeconds: 5
+  timeoutSeconds: 3
+
+postgresql:
+  enabled: {{cookiecutter.postgresql_enabled}}
+  postgresUser: {{cookiecutter.postgres_user}}
+  postgresPassword: {{cookiecutter.postgres_password}}
+  postgresDatabase: {{cookiecutter.postgres_database}}
+
 settings:
   DATABASE_URL: {{cookiecutter.DATABASE_URL}}
